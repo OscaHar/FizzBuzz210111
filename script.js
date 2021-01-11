@@ -1,13 +1,5 @@
 let output = "";
-for (var i = 0; i < 31; i++) {
-  if (i % 15 === 0) {
-    output += "FizzBuzz ";
-  } else if (i % 3 === 0) {
-    output += "FizzBuzz ";
-  } else if (i % 5 === 0) {
-    output += "FizzBuzz ";
-  } else {
-    output += `${i} `;
-  }
-}
+
+for (var i = 1; i < 31; i++) i % 15 === 0 ? (output += "FizzBuzz ") : i % 5 === 0 ? (output += "Buzz ") : i % 3 === 0 ? (output += "Fizz "): (output += `${i} `);
+
 console.log(output);
