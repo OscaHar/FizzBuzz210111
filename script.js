@@ -1,13 +1,13 @@
-let i;
-
-for (i = 1; i < 31; i++) {
+let output = "";
+for (var i = 0; i < 31; i++) {
   if (i % 15 === 0) {
-    console.log("FizzBuzz");
+    output += "FizzBuzz ";
   } else if (i % 3 === 0) {
-    console.log("Fizz");
+    output += "FizzBuzz ";
   } else if (i % 5 === 0) {
-    console.log("Buzz");
+    output += "FizzBuzz ";
   } else {
-    console.log(i);
+    output += `${i} `;
   }
 }
+console.log(output);
